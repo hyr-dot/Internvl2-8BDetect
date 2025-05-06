@@ -33,11 +33,11 @@ torchrun \
   --master_addr=127.0.0.1 \
   --nproc_per_node=${GPUS} \
   --master_port=${MASTER_PORT} \
-  /home/ybw/hyr_temp/UVL/InternVL2-8B/finetune/internvl_chat_finetune.py \
-  --model_name_or_path "/home/ybw/hyr_temp/UVL/InternVL2-8B" \
+  ./internvl_chat_finetune.py \
+  --model_name_or_path "../InternVL2-8B" \
   --conv_style "internlm2-chat" \
   --output_dir ${OUTPUT_DIR} \
-  --meta_path "/home/ybw/hyr_temp/UVL/InternVL2-8B/data/multicls.json" \
+  --meta_path "../InternVL2-8B/data/multicls.json" \
   --overwrite_output_dir True \
   --force_image_size 448 \
   --max_dynamic_patch 6 \
@@ -69,6 +69,6 @@ torchrun \
   --dynamic_image_size True \
   --use_thumbnail True \
   --ps_version 'v2' \
-  --deepspeed "/home/ybw/hyr_temp/UVL/InternVL2-8B/finetune/zero_stage1_config.json" \
+  --deepspeed "./zero_stage1_config.json" \
   --report_to "tensorboard" \
   2>&1 | tee -a "${OUTPUT_DIR}/training_log.txt"s
