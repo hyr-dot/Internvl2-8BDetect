@@ -44,18 +44,20 @@ finetune internvl2-8B to detect AI-generated images/videos by LoRA.
 After downloading the pre-trained model, prepare your customized SFT (Supervised Fine-Tuning) data. Create a JSON file in Internvl2-8BDetect/data/ similar to the example below.
 
 The format for the JSON file should be:
-    ```json
-    {
-      "your-custom-dataset-1": {
-        "root": "path/to/the/image/",
-        "annotation": "path/to/the/jsonl/annotation",
-        "data_augment": false,
-        "max_dynamic_patch": 12,
-        "repeat_time": 1,
-        "length": "number of samples in the dataset"
-      }
-    }
-    ```
+
+```json
+{
+  "your-custom-dataset-1": {
+    "root": "path/to/the/image/",
+    "annotation": "path/to/the/jsonl/annotation",
+    "data_augment": false,
+    "max_dynamic_patch": 12,
+    "repeat_time": 1,
+    "length": "number of samples in the dataset"
+  }
+}
+```
+
 You can refer to Internvl2-8BDetect/data/941split.json for example.
 
 For each data item in the "root" folder, there must be a corresponding entry in the file specified by the "annotation" field. A concrete example can be found in Internvl2-8BDetect/data/data_example.jsonl.
@@ -88,7 +90,7 @@ You can quickly run the demo script by executing:
 ```python
 python llm_test/inter_test.py
 ```
-Or you can use the model by flask to avoid loading for each time.
+or you can use the model by flask to avoid loading for each time.
 
 ```python
 python llm_test/single_video_chat.py
