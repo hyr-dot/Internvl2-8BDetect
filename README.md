@@ -1,5 +1,5 @@
 # Internvl2-8BDetect
-Finetune internvl2-8B to detect AI-generated images/videos by LoRA.
+Finetune Internvl2-8B to detect AI-generated images/videos by LoRA.
 
 ## 🛠️ Requirements and Installation
 
