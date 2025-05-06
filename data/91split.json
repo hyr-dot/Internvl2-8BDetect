@@ -1,0 +1,9 @@
+{
+    "AIGC": {
+      "root": "/mnt/data/Genvideo/GenVideo-Val",
+      "annotation": "/mnt/data/Genvideo/GenVideo-Val/91split.jsonl",
+      "data_augment": false,
+      "repeat_time": 1,
+      "length": 19131
+    }
+}
