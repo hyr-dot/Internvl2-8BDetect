@@ -58,9 +58,9 @@ The format for the JSON file should be:
 }
 ```
 
-You can refer to Internvl2-8BDetect/data/941split.json for example.
+You can refer to [Internvl2-8BDetect/data/941split.json](https://github.com/hyr-dot/Internvl2-8BDetect/blob/main/data/91split.json) for example.
 
-For each data item in the "root" folder, there must be a corresponding entry in the file specified by the "annotation" field. A concrete example can be found in Internvl2-8BDetect/data/data_example.jsonl.
+For each data item in the "root" folder, there must be a corresponding entry in the file specified by the "annotation" field. A concrete example can be found in [Internvl2-8BDetect/data/data_example.jsonl](https://github.com/hyr-dot/Internvl2-8BDetect/blob/main/data/data_example.jsonl).
 
 The format for each specific JSONL (such as plain text data, single-image data, multi-image data, video data) can be organized according to the descriptions provided in [this document](https://internvl.readthedocs.io/en/latest/get_started/chat_data_format.html).
 
