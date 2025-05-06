@@ -44,7 +44,7 @@ finetune internvl2-8B to detect AI-generated images/videos by LoRA.
 After downloading the pre-trained model, prepare your customized SFT (Supervised Fine-Tuning) data. Create a JSON file in Internvl2-8BDetect/data/ similar to the example below.
 
 The format for the JSON file should be:
-    ```
+    ```json
     {
       "your-custom-dataset-1": {
         "root": "path/to/the/image/",
