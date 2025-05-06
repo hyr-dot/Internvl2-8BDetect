@@ -1,3 +1,3 @@
 video_test1:
-  ip: 10.26.2.240
-  port: 8868
+  ip: 10.26.2.240 # change to your ip address
+  port: 8868 # an arbitrary free port
