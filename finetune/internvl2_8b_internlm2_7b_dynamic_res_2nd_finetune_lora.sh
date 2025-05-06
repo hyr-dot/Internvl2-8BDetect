@@ -1,9 +1,6 @@
 set -x
   # --use_backbone_lora 16 \
 
-# use only 1 gpu
-export CUDA_VISIBLE_DEVICES=1
-
 GPUS=${GPUS:-1}
 BATCH_SIZE=${BATCH_SIZE:-16}
 PER_DEVICE_BATCH_SIZE=${PER_DEVICE_BATCH_SIZE:-1}
