@@ -1,4 +1,7 @@
 # Internvl2-8BDetect
+
+有帮助的话记得点个星哦~ | If it helps, please give me a star
+
 Finetune Internvl2-8B to detect AI-generated images/videos by LoRA.
 
 ## 🛠️ Requirements and Installation
